@@ -1,8 +1,6 @@
 addToHomescreen.removeSession();     	// use this to remove the localStorage variable
 	var ath = addToHomescreen({
-	    debug: 'android',           		// activate debug mode in ios emulation
-	    animationIn: 'bubble',
-	    animationOut: 'fade',
+	    debug: 'ios',           		// activate debug mode in ios emulation
 	    skipFirstVisit: false,			// show at first access
 	    startDelay: 0,          		// display the message right away
 	    lifespan: 0,            		// do not automatically kill the call out
