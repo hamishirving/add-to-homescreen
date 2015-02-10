@@ -253,3 +253,45 @@
 		box-shadow: none;
 	}
 }
+
+/*
+** ---------------
+** STYLE OVERRIDES
+** ---------------
+*/
+
+.ath-container {
+	background: #fff;
+
+	border: 1px solid #dcdcdc;
+	border-radius: 3px;
+
+	box-shadow: none;
+}
+
+.ath-container.ath-ios .ath-application-icon {
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.ath-ios.ath-phone:after {
+	background: #fff;
+	border-right: 1px solid #dcdcdc;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.ath-ios.ath-tablet:after {
+	background: #fff;
+	border-left: 1px solid #dcdcdc;
+	border-top: 1px solid #dcdcdc;
+}
+
+@media only screen and (orientation: landscape) {
+	.ath-ios8.ath-phone:after {
+		border-right: none;
+		border-bottom: none;
+		border-left: 1px solid #dcdcdc;
+		border-top: 1px solid #dcdcdc;
+	}
+
+}
